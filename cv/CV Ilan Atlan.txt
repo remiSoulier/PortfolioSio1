@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Atlan Ilan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+        .contact-info, .languages, .skills, .interests {
+            margin-bottom: 20px;
+        }
+        .contact-info a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Atlan Ilan</h1>
+        <p><strong>Étudiant, recherche d’alternance</strong> - BTS SIO</p>
+
+        <div class="contact-info">
+            <h2>Contact</h2>
+            <ul>
+                <li>Email : <a href="mailto:ilan@familleatlan.fr">ilan@familleatlan.fr</a></li>
+                <li>Adresse : 20 Plan du Terral, Lattes</li>
+                <li>GitHub : <a href="https://github.com/Ilan34" target="_blank">github.com/Ilan34</a></li>
+                <li>LinkedIn : <a href="https://www.linkedin.com/in/ilanatlan" target="_blank">linkedin.com/in/ilanatlan</a></li>
+                <li>Téléphone : 07 69 34 87 13</li>
+                <li>Permis : A1 + véhicule, AAC</li>
+            </ul>
+        </div>
+
+        <div class="education">
+            <h2>Éducation</h2>
+            <ul>
+                <li>Lycée Champollion, Lattes (2021 - 2024)</li>
+                <li>Baccalauréat général mention assez bien (Spé Anglais et Maths, options Euro Espagnol et Maths expertes)</li>
+            </ul>
+        </div>
+
+        <div class="languages">
+            <h2>Langues</h2>
+            <ul>
+                <li>Français : langue natale</li>
+                <li>Anglais : passage Cambridge en Terminale</li>
+                <li>Espagnol : certification Cervantes A2</li>
+            </ul>
+        </div>
+
+        <div class="experience">
+            <h2>Expériences Professionnelles</h2>
+            <ul>
+                <li>
+                    <strong>Employé de libre-service (CDI)</strong> - Utile Maurin (Mars 2022 - Présent)
+                    <ul>
+                        <li>Cuisson du pain, mise en sachet et en rayon</li>
+                        <li>Vidage des arrivages</li>
+                        <li>Encaissement et conseil client</li>
+                        <li>Réapprovisionnement des rayons frais et surgelés</li>
+                        <li>Création et édition d'étiquettes</li>
+                        <li>Correction des stocks</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Vendeur</strong> - Moto Store 34 (Juin 2022)
+                    <ul>
+                        <li>Assistance et conseil client</li>
+                        <li>Gestion des fiches de prêts de véhicules</li>
+                        <li>Planification des rendez-vous</li>
+                        <li>Réponse aux appels</li>
+                        <li>Rangement des pièces détachées</li>
+                        <li>Inventaire des prix</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="skills">
+            <h2>Compétences</h2>
+            <ul>
+                <li>Service client</li>
+                <li>Méthodes d’organisation</li>
+                <li>Discipline</li>
+                <li>Adaptabilité</li>
+                <li>Expression orale</li>
+                <li>Aptitudes téléphoniques</li>
+                <li>Relationnel face à face</li>
+                <li>Travail en équipe</li>
+                <li>Suite Office + compétences tech</li>
+            </ul>
+        </div>
+
+        <div class="interests">
+            <h2>Centres d’intérêts</h2>
+            <ul>
+                <li>Informatique</li>
+                <li>Innovations technologiques</li>
+                <li>Sports : Football, Tennis, Badminton</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
