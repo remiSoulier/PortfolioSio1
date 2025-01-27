@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>ESICAD Montpellier - Notre Histoire</title>
+    <style>
+        /* Couleurs pour le thème sombre */
+        :root {
+            --primary-color: #0a0a23;  /* Bleu marine très foncé */
+            --secondary-color: #1f3b73;  /* Bleu marine foncé */
+            --accent-color: #ececec;  /* Couleur d'accentuation claire */
+            --text-color: #ffffff;  /* Couleur du texte en blanc */
+            --background-color: #121212;  /* Fond sombre */
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: var(--text-color);
+            background-color: var(--background-color);
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            padding: 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            transition: background-color 0.5s ease;
+        }
+
+        header h1 {
+            color: var(--accent-color);
+            display: inline-block;
+        }
+
+        nav {
+            float: right;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: var(--secondary-color);
+        }
+
+        main {
+            margin-top: 100px;
+        }
+
+        section {
+            padding: 60px 20px;
+            min-height: 80vh;
+            transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+        }
+
+        section h2 {
+            margin-bottom: 20px;
+            color: var(--secondary-color);
+            text-align: center;
+        }
+
+        section p, section ul {
+            max-width: 800px;
+            margin: auto;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        section ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .gallery figure {
+            width: 300px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.5s ease;
+        }
+
+        .gallery figcaption {
+            position: absolute;
+            bottom: 0;
+            background: rgba(10, 10, 35, 0.8);
+            color: var(--accent-color);
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+
+        .gallery figure:hover img {
+            transform: scale(1.1);
+        }
+
+        .gallery figure:hover figcaption {
+            opacity: 1;
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: var(--accent-color);
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 768px) {
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+
+            nav {
+                float: none;
+            }
+
+            .gallery {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>ESICAD Montpellier</h1>
+    <nav>
+        <ul>
+            <li><a href="#histoire">Notre Histoire</a></li>
+            <li><a href="#formations">Formations</a></li>
+            <li><a href="#campus">Notre Campus</a></li>
+            <li><a href="#vie-etudiante">Vie Étudiante</a></li>
+            <li><a href="#galerie">Galerie</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section id="histoire">
+        <h2>Notre Histoire</h2>
+        <p>
+            Fondée en 1985, l'ESICAD Montpellier est une école supérieure privée qui s'est imposée comme un acteur majeur de la formation en commerce, gestion, informatique et santé en Occitanie. Depuis plus de 35 ans, nous accompagnons nos étudiants vers la réussite professionnelle en proposant des formations de qualité, adaptées aux exigences du marché du travail.
+        </p>
+        <p>
+            Grâce à notre réseau d'entreprises partenaires et à notre équipe pédagogique expérimentée, nous offrons à nos étudiants un accompagnement personnalisé tout au long de leur parcours. Notre mission est de former les futurs cadres et professionnels qui contribueront activement au développement économique et social de notre région.
+        </p>
+    </section>
+
+    <section id="formations">
+        <h2>Nos Formations</h2>
+        <p>
+            L'ESICAD propose une large gamme de formations du BTS au Master, en initial ou en alternance, dans les domaines suivants :
+        </p>
+        <ul>
+            <li><strong>Commerce et Marketing :</strong> BTS MCO, BTS NDRC, Bachelor Marketing...</li>
+            <li><strong>Gestion et Comptabilité :</strong> BTS CG, Bachelor Gestion Finance...</li>
+            <li><strong>Informatique :</strong> BTS SIO, Bachelor Développement Web...</li>
+            <li><strong>Santé :</strong> BTS SP3S, Bachelor Management des Organisations de Santé...</li>
+        </ul>
+        <p>
+            Nos programmes sont conçus pour répondre aux besoins des entreprises et sont régulièrement mis à jour pour intégrer les dernières évolutions du secteur.
+        </p>
+    </section>
+
+    <section id="campus">
+        <h2>Notre Campus</h2>
+        <p>
+            Situé au cœur de Montpellier, notre campus moderne offre un environnement d'apprentissage optimal avec des salles équipées des dernières technologies, un accès à des ressources pédagogiques en ligne, et des espaces dédiés à la collaboration et à la détente. Le campus est facilement accessible en transports en commun et proche de nombreuses commodités.
+        </p>
+    </section>
+
+    <section id="vie-etudiante">
+        <h2>La Vie Étudiante</h2>
+        <p>
+            À l'ESICAD, nous croyons que la vie étudiante joue un rôle essentiel dans le développement personnel et professionnel de nos étudiants. Notre Bureau des Étudiants (BDE) organise régulièrement des événements, des sorties, et des activités culturelles et sportives. Ces initiatives favorisent la cohésion, le réseau, et offrent des opportunités uniques de développement de compétences transversales.
+        </p>
+    </section>
+
+    <section id="galerie">
+        <h2>Galerie Photo</h2>
+        <div class="gallery">
+            <figure>
+                <img src="campus.jpg" alt="Campus ESICAD">
+                <figcaption>Notre Campus Moderne</figcaption>
+            </figure>
+            <figure>
+                <img src="etudiants.jpg" alt="Étudiants en action">
+                <figcaption>Étudiants en Pleine Apprentissage</figcaption>
+            </figure>
+            <figure>
+                <img src="evenement.jpg" alt="Événement Étudiant">
+                <figcaption>Événements Étudiants</figcaption>
+            </figure>
+            <!-- Ajoutez d'autres photos selon vos besoins -->
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contactez-Nous</h2>
+        <p>
+            Pour plus d'informations sur nos formations ou pour toute autre demande, n'hésitez pas à nous contacter :
+        </p>
+        <ul>
+            <li><strong>Adresse :</strong> 50 Rue Montpellier, 34000 Montpellier</li>
+            <li><strong>Téléphone :</strong> 04 67 00 00 00</li>
+            <li><strong>Email :</strong> <a href="mailto:contact@esicad.com">contact@esicad.com</a></li>
+        </ul>
+        <p>
+            Suivez-nous également sur les réseaux sociaux pour rester informé de nos actualités et événements.
+        </p>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 ESICAD Montpellier. Tous droits réservés.</p>
+</footer>
+
+<!-- Script pour les transitions -->
+<script>
+    // Script pour les transitions avancées lors du défilement
+    document.addEventListener('DOMContentLoaded', () => {
+        const sections = document.querySelectorAll('section');
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = 1;
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+
+        sections.forEach(section => {
+            section.style.opacity = 0;
+            section.style.transform = 'translateY(50px)';
+            observer.observe(section);
+        });
+    });
+</script>
+</body>
+</html>
